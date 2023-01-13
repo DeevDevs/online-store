@@ -1,0 +1,22 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper-web {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  max-width: 2450px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wrapper__main {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 2560px;
+  margin: 0 auto;
+}

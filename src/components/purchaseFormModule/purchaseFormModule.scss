@@ -1,0 +1,178 @@
+@import '../../styles/variables';
+
+.pchs-module {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.249);
+  height: 760px;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-family: 'Inder', sans-serif;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: opacity 0.2s linear;
+
+  &__gold {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    height: 180px;
+  }
+
+  &__close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: white;
+    background-image: url('./../../static/cross-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover {
+      filter: drop-shadow(2px 2px 2px black);
+    }
+
+    &:active {
+      filter: drop-shadow(0 0 0 white);
+    }
+  }
+
+  &__header {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  &__message {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+}
+
+.pchs-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  font-size: 20px;
+
+  &__field {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  &__payment-header {
+    font-size: 24px;
+    margin: 35px auto 0 auto;
+  }
+
+  &__btn {
+    margin: 40px 60px 0 auto;
+    height: 50px;
+    width: 280px;
+    background-image: linear-gradient(to top, #161631, #2e2f5b);
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    font-family: 'Inder', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-image: linear-gradient(to top, #272756, #414280);
+    }
+
+    &:active {
+      box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.form-field {
+  height: 30px;
+  width: 380px;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.259);
+  font-family: 'Kaisei Tokumin', serif;
+  font-size: 16px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.bank-system {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 40px 48px 0 auto;
+
+  &__label {
+    margin: 0;
+  }
+
+  &__sys-img {
+    display: block;
+    width: 40px;
+    height: 25px;
+    margin-left: 15px;
+  }
+}
+
+.card-dtls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 40px 0 0 auto;
+  position: relative;
+
+  &__expiry {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  &__cvv {
+    position: relative;
+  }
+
+  &__field {
+    width: 80px;
+    margin-left: 15px;
+    padding-left: 10px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.259);
+  }
+}
+
+.form-error-msg {
+  position: absolute;
+  font-size: 14px;
+  left: 220px;
+  top: -20px;
+  color: red;
+}
+
+.card-dtls-error-msg {
+  position: absolute;
+  font-size: 14px;
+  left: 0px;
+  top: -20px;
+  color: red;
+}

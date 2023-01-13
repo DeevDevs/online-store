@@ -1,0 +1,262 @@
+@import './../../styles/variables';
+
+.pp-game {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 1265px;
+  margin: 40px auto 60px auto;
+  border-radius: 7px;
+  font-family: 'Kaisei Tokumin', serif;
+
+  @media (max-width: 1600px) {
+    width: 1000px;
+  }
+
+  @media (max-width: 1200px) {
+    width: 800px;
+  }
+}
+
+.pp-game__name {
+  font-family: 'Kaisei Tokumin', serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 25px auto 22px 44px;
+  @media (max-width: 1600px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 32px;
+  }
+}
+
+.pp-game__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.pp-img-box {
+  position: relative;
+  margin-left: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 690px;
+  height: 690px;
+  border: 1px solid black;
+  border-radius: 10px;
+
+  @media (max-width: 1600px) {
+    width: 450px;
+    height: 450px;
+  }
+
+  @media (max-width: 1200px) {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+.pp-img-box__img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pp-zoom-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px rgb(255, 252, 252));
+
+  &:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(2px 2px 2px rgb(255, 254, 254));
+  }
+
+  @media (max-width: 1200px) {
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.pp-zoom-btn__img {
+  height: 35px;
+  @media (max-width: 1600px) {
+    height: 25px;
+  }
+
+  @media (max-width: 1200px) {
+    height: 20px;
+  }
+}
+
+.pp-dtls-box {
+  margin-left: 55px;
+  font-size: 28px;
+  @media (max-width: 1600px) {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+
+  @media (max-width: 1200px) {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+}
+
+.pp-dtls-box__price {
+  margin-top: 5px;
+}
+
+.pp-controls {
+  margin: 17px 0 70px 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pp-img-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.pp-img-panel__img {
+  height: 102px;
+  border-radius: 5px;
+  margin-right: 16px;
+  border: 1px solid transparent;
+
+  &:hover {
+    border-color: #2e2f5b;
+  }
+
+  @media (max-width: 1600px) {
+    height: 70px;
+    margin-right: 14px;
+  }
+
+  @media (max-width: 1200px) {
+    height: 60px;
+    margin-right: 10px;
+  }
+}
+
+.pp-controls__btn {
+  width: 220px;
+  height: 80px;
+  font-size: 30px;
+  background-image: linear-gradient(to top, #161631, #2e2f5b);
+  color: #ffffff;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
+  font-family: 'Inder', sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(to top, #272756, #414280);
+  }
+
+  &:active {
+    box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (max-width: 1600px) {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  @media (max-width: 1200px) {
+    margin: 8px 120px 0 0;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+.btn-send-to-cart {
+  margin: 10px 10px 0 auto;
+}
+
+.btn-alrd-added {
+  background-image: linear-gradient(to top, #025d07, #007806);
+  color: #ffffff;
+  box-shadow: 0px 10px 6px rgba(0, 89, 3, 0.25);
+  font-family: 'Inder', sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(to top, #025d07, #007806);
+  }
+}
+
+.btn-buy-now {
+  margin: 10px 20px 0 10px;
+}
+
+.pp-game__split-line {
+  width: 90%;
+  height: 2px;
+  border-radius: 6px;
+  background-color: #161631;
+  margin: 0 auto 40px auto;
+  position: relative;
+}
+
+.pp-game__descr-head {
+  margin: 0 auto 10px 44px;
+  font-size: 30px;
+  @media (max-width: 1600px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.pp-game__description {
+  margin: 0 380px 100px 44px;
+  font-size: 20px;
+  min-height: 200px;
+  @media (max-width: 1600px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 16px;
+    margin: 0 240px 40px 44px;
+  }
+}
+
+.pp-game__decor {
+  height: 280px;
+  position: absolute;
+  right: -36px;
+  top: 40px;
+  @media (max-width: 1600px) {
+    height: 240px;
+    right: -16px;
+    top: 50px;
+  }
+
+  @media (max-width: 1200px) {
+    height: 180px;
+    right: -16px;
+    top: 50px;
+  }
+}

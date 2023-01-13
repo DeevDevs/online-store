@@ -1,0 +1,122 @@
+.lg-card {
+  display: flex;
+  box-sizing: border-box;
+  width: 98%;
+  height: 220px;
+  background: #fffdfd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+
+  &__col {
+    padding: 25px 0 25px 25px;
+    display: flex;
+    flex-direction: column;
+    &:last-child {
+      flex-basis: 200px;
+      padding: 25px;
+    }
+  }
+
+  &__image {
+    height: 170px;
+    aspect-ratio: 1;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.331);
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.694);
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    font-family: 'Inder';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: #161631;
+    cursor: pointer;
+
+    &:hover {
+      filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.51));
+    }
+  }
+
+  &__description {
+    margin: 5px 0 0;
+    height: 110px;
+    padding: 0;
+    font-family: 'Inder';
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+
+  &__category {
+    margin-top: auto;
+  }
+
+  &__price {
+    font-family: 'Inder';
+    font-size: 24px;
+    text-align: right;
+    color: #0f873f;
+    &::after {
+      content: '$';
+    }
+  }
+
+  &__stock {
+    padding: 5px 0 0;
+    text-align: right;
+    font-family: 'Inder';
+    font-size: 18px;
+    color: #000000;
+  }
+
+  &__add-btn {
+    margin: auto 0 0 auto;
+    border: none;
+    background-image: linear-gradient(to top, #161631, #2e2f5b);
+    font-size: 18px;
+    height: 30px;
+    width: 125px;
+    color: #ffffff;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
+    font-family: 'Inder', sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      background-image: linear-gradient(to top, #272756, #414280);
+    }
+
+    &:active {
+      box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.btn-alrd-added {
+  background-image: linear-gradient(to top, #025d07, #007806);
+  color: #ffffff;
+  box-shadow: 0px 10px 6px rgba(0, 89, 3, 0.25);
+  font-family: 'Inder', sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(to top, #5d0702, #a10101) !important;
+  }
+}

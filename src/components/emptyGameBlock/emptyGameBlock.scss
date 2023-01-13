@@ -1,0 +1,35 @@
+
+.empty-block {
+  width: 80%;
+  max-width: 1300px;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 80px auto;
+  padding: 40px;
+
+  @media (max-width: 1200px) {
+    height: 400px;
+  }
+
+  &__message {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight: 700;
+    max-width: 900px;
+    margin: 20px auto 0 auto;
+    filter: drop-shadow(0px 0px 4px rgba(30, 30, 30, 0.665));
+
+    @media (max-width: 1200px) {
+      font-size: 22px;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-height: 80%;
+    max-width: 90%;
+    margin: auto auto 0 auto;
+  }
+}

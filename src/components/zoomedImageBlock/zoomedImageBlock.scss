@@ -1,0 +1,40 @@
+.pp-magnified-img {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  background-color: #161631;
+  transition: opacity 0.25s linear;
+
+  &__img {
+    display: block;
+    height: 80vh;
+    max-height: 1100px;
+    margin: auto;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    background-color: #161631;
+    border: none;
+    cursor: pointer;
+
+    &:hover > img {
+      filter: drop-shadow(0 0 4px #ffffff);
+    }
+
+    & img {
+      height: 38px;
+      width: 38px;
+      margin: auto;
+    }
+  }
+}

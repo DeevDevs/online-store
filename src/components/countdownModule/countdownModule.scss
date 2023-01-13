@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+.countdown-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 350px;
+  padding: 30px;
+  background-color: white;
+  z-index: 14;
+  border-radius: 8px;
+  border: 1px solid rgb(210, 210, 210);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inder', sans-serif;
+
+  &__msg {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  &__ctdwn-msg {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  &__ctdwn-number {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 0px;
+  }
+}

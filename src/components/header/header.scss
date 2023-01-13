@@ -1,0 +1,149 @@
+@import './../../styles/variables';
+
+.header {
+  background-color: #e5e5ff;
+  position: relative;
+  height: 84px;
+  width: calc(50% + 200px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  filter: drop-shadow(13px 13px 25px rgba(0, 0, 0, 0.25));
+  z-index: 8;
+
+  @media (max-width: 1600px) {
+    height: 68px;
+  }
+  @media (max-width: 1000px) {
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 300px;
+    right: 0;
+    top: 0;
+    background-color: #e5e5ff;
+    transform: translateX(150px) translateY(-204px) rotateZ(55deg);
+    z-index: -1;
+    @media (max-width: 1600px) {
+      height: 278px;
+      transform: translateX(140px) translateY(-204px) rotateZ(55deg);
+    }
+  }
+
+  &__container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 2480px;
+    width: 99vw;
+    transform: translateX(calc(-50% - 210px));
+    margin-right: 0;
+  }
+
+  &__moto {
+    font-size: 20px;
+    margin-left: 320px;
+    margin-top: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+      margin-left: 220px;
+    }
+    @media (max-width: 1000px) {
+    }
+  }
+
+  &__btn {
+    margin: 18px auto auto auto;
+    width: 135px;
+    height: 40px;
+    font-size: 22px;
+    background-image: linear-gradient(to top, #161631, #2e2f5b);
+    color: #ffffff;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
+    font-family: 'Inder', sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      background-image: linear-gradient(to top, #272756, #414280);
+    }
+
+    &:active {
+      box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    @media (max-width: 1600px) {
+      margin: 16px auto auto auto;
+      width: 105px;
+      height: 32px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 1000px) {
+    }
+  }
+}
+
+.header__pseudo-cont {
+  margin-left: auto;
+}
+
+.header-logo {
+  position: relative;
+  &__img {
+    position: absolute;
+    top: 4px;
+    left: 175px;
+    height: 60px;
+    width: 60px;
+
+    @media (max-width: 1600px) {
+      top: 4px;
+      left: 120px;
+      height: 45px;
+      width: 45px;
+    }
+
+    @media (max-width: 1000px) {
+    }
+  }
+
+  &__tbltop {
+    position: absolute;
+    left: 27px;
+    top: 19px;
+    font-size: 32px;
+    font-family: 'Julius Sans One', sans-serif;
+
+    @media (max-width: 1600px) {
+      left: 20px;
+      top: 12px;
+      font-size: 22px;
+    }
+
+    @media (max-width: 1000px) {
+    }
+  }
+
+  &__geek {
+    position: absolute;
+    left: 150px;
+    top: 54px;
+    font-size: 24px;
+    font-family: 'Inder', sans-serif;
+
+    @media (max-width: 1600px) {
+      left: 95px;
+      top: 40px;
+      font-size: 20px;
+    }
+
+    @media (max-width: 1000px) {
+    }
+  }
+}

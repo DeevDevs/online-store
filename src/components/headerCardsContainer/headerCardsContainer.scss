@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.sc-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  padding-bottom: 30px;
+}
+
+.empty-header-cart {
+  font-family: 'Inder', sans-serif;
+  font-size: 18px;
+  width: 250px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}

@@ -1,0 +1,93 @@
+.doubleRange {
+  width: 100%;
+  height: 45px;
+  position: relative;
+  padding-top: 7px;
+
+  &__border {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    border: 1px solid #272756;
+    border-radius: 10px;
+    background: transparent;
+  }
+
+  &__filling {
+    position: absolute;
+    margin: 0 3px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #272756;
+  }
+
+  // HTMLInputElement
+  &__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    border: none;
+    height: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    &_left {
+      top: 0;
+    }
+    &_rigth {
+      bottom: 0;
+    }
+  }
+
+  &__output-min {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+  }
+
+  &__output-max {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+  }
+}
+
+// For Chrome
+.doubleRange__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #4c4d88 0%,
+    #2e2f5b 30%,
+    #2e2f5b 100%
+  );
+  border: none;
+  box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  pointer-events: all;
+  position: relative;
+  z-index: 2;
+}
+
+// For Firefox
+.doubleRange__input::-moz-range-thumb {
+  -moz-appearance: none;
+  -moz-tap-highlight-color: transparent;
+  background-color: #272756;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  pointer-events: all;
+  position: relative;
+  z-index: 2;
+}

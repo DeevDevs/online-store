@@ -1,0 +1,119 @@
+@import './../../styles/variables';
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 395px;
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  & a {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 230px;
+    height: 230px;
+    margin: 15px auto 0 auto;
+    filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.331);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.694);
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    min-height: 50px;
+    margin: 5px auto;
+    padding: 0 5px;
+    font-weight: 600;
+    font-family: 'Inder', sans-serif;
+    color: #161631;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.51));
+    }
+  }
+}
+
+.game-dtls {
+  display: block;
+
+  &__rc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__psb {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__instock-img {
+    width: 14px;
+    height: 14px;
+    transform: translate(3px, 2px);
+  }
+
+  &__add-btn {
+    margin: auto 15px 5px auto;
+    border: none;
+    background-image: linear-gradient(to top, #161631, #2e2f5b);
+    font-size: 12px;
+    height: 24px;
+    width: 100px;
+    color: #ffffff;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
+    font-family: 'Inder', sans-serif;
+    cursor: pointer;
+    transition: all 2s;
+
+    &:hover {
+      background-image: linear-gradient(to top, #272756, #414280);
+    }
+
+    &:active {
+      box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.price-stock {
+  display: flex;
+  flex-direction: column;
+
+  &__price {
+    font-family: 'Inder', sans-serif;
+    font-size: 14px;
+    margin: 10px auto 5px 15px;
+  }
+
+  &__stock {
+    font-family: 'Inder', sans-serif;
+    font-size: 14px;
+    margin: 0 auto 0 15px;
+  }
+}
+
+.btn-alrd-added {
+  background-image: linear-gradient(to top, #025d07, #007806);
+  color: #ffffff;
+  box-shadow: 0px 10px 6px rgba(0, 89, 3, 0.25);
+  font-family: 'Inder', sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(to top, #5d0702, #a10101) !important;
+  }
+}

@@ -1,0 +1,102 @@
+@import './../../styles/variables';
+
+.search-view-params-block {
+  width: calc(100% - 50px);
+  padding-left: 24px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffdfd;
+  filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 2px;
+  margin-bottom: 15px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    left: -49px;
+    top: 0;
+    bottom: 0;
+    background: #fffdfd;
+    clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 100% 0%);
+  }
+
+  &__games-found {
+    font-size: 20px;
+    margin: 25px auto 15px 30px;
+    font-weight: 600;
+    font-family: 'Inder', sans-serif;
+    border-bottom: 1px solid black;
+  }
+
+  &__btn {
+    height: 36px;
+    width: 260px;
+    margin-top: 15px;
+    border: none;
+    background: linear-gradient(to top, #161631, #2e2f5b);
+    font-size: 18px;
+    color: #ffffff;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
+    font-family: 'Inder', sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(to top, #272756, #414280);
+    }
+
+    &_active {
+      background: linear-gradient(180deg, #388d5a 0%, #285b3c 100%);
+    }
+  }
+}
+
+.search-view-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &__word {
+    font-size: 20px;
+    font-family: 'Inder', sans-serif;
+  }
+
+  &__btn {
+    height: 36px;
+    width: 60px;
+    margin-left: 15px;
+    border: none;
+    background-image: linear-gradient(to top, #161631, #2e2f5b);
+    font-size: 16px;
+    color: #ffffff;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
+    font-family: 'Inder', sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(to top, #272756, #414280);
+    }
+
+    &_active {
+      background: linear-gradient(180deg, #388d5a 0%, #285b3c 100%);
+    }
+
+    &_active:hover {
+      background: linear-gradient(180deg, #388d5a 0%, #285b3c 100%);
+    }
+  }
+}
+
+.btn-activated {
+  background-image: linear-gradient(180deg, #388d5a 0%, #285b3c 100%);
+  color: #ffffff;
+  box-shadow: 0px 10px 6px rgba(0, 89, 3, 0.25);
+  font-family: 'Inder', sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(180deg, #388d5a 0%, #285b3c 100%);
+  }
+}

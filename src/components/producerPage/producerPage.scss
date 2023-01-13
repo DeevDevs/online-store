@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+
+.producer-page-crumbs {
+  width: 80%;
+  padding-left: 30px;
+  margin: 60px auto 20px auto;
+}
+
+.producer-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+
+  &__name {
+    margin-top: 20px;
+    font-size: 70px;
+    font-weight: 700;
+    color: #161631;
+    letter-spacing: 4px;
+    text-shadow: -2px -2px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255),
+      -2px 2px 0 rgb(255, 253, 253), 2px 2px 0 rgb(255, 255, 255);
+    filter: drop-shadow(2px 2px 14px rgba(22, 22, 49, 0.644));
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    width: 80%;
+    row-gap: 180px;
+    column-gap: 100px;
+    padding: 0 80px;
+    margin: 90px auto 120px auto;
+
+    @media (min-width: 2000px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    & .game-card {
+      scale: 1.3;
+    }
+  }
+}

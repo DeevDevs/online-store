@@ -1,0 +1,13 @@
+@import './../../styles/variables';
+
+.rc-rating {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+
+  &__img {
+    height: 20px;
+    width: 15px;
+    margin-right: 2px;
+  }
+}

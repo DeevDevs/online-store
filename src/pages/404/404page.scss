@@ -1,0 +1,62 @@
+@import '../../styles/variables';
+
+.wd-page {
+  height: 800px;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  @media (max-width: 1300px) {
+    height: 600px;
+  }
+
+  &__troll {
+    height: 800px;
+    margin: auto 0 0 auto;
+
+    @media (max-width: 1300px) {
+      height: 600px;
+    }
+  }
+
+  &__map {
+    height: 600px;
+    margin: auto auto auto 0;
+    @media (max-width: 1300px) {
+      height: 450px;
+    }
+  }
+}
+
+.wd-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -80%);
+  font-family: 'Kaisei Tokumin', serif;
+  display: flex;
+  flex-direction: column;
+
+  &__fof {
+    color: #af1515;
+    text-align: center;
+    margin: 0;
+    font-size: 200px;
+    @media (max-width: 1300px) {
+      font-size: 150px;
+    }
+  }
+
+  &__msg {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    max-width: 700px;
+    margin: 10px 0;
+    @media (max-width: 1300px) {
+      font-size: 28px;
+    }
+  }
+}
